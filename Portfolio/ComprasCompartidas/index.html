@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Compras Compartidas</title>
+        <link rel="stylesheet" href="css/estilos.css" />
+        <script src="js/clases.js"></script>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="js/funciones.js"></script>
+    </head>
+    <body>
+        <header>
+            <a id="inicio"></a>
+            <img class="tituloGrande" src="img/titulo.png" alt="compras compartidas" />
+            <img class="tituloChico" src="img/titulo_chico.png" alt="compras compartidas" />
+        </header>
+        <br />
+        <nav>
+            <span class="aBotonesNavegador"><img id="irPersonas" alt="ir a Personas" class="inputBotonesNavegador" src="img/personas.png" /></span>
+            <span class="aBotonesNavegador"><img id="irCompras" alt="ir a Compras" class="inputBotonesNavegador" src="img/compras.jpg" /></span>
+            <span class="aBotonesNavegador"><img id="irConsultas" alt="ir a Consultas" class="inputBotonesNavegador" src="img/consultas.jpg" /></span>
+            <a class="aBotonesNavegador" href="https://www.instagram.com/"><img alt="ir a Instagram" class="inputBotonesNavegador" src="img/Instagram.jpg" /></a>
+            <a class="aBotonesNavegador" href="https://www.facebook.com/"><img alt="ir a Facebook" class="inputBotonesNavegador" src="img/Facebook.png" /></a>
+            <a class="aBotonesNavegador" href="https://uy.linkedin.com/"><img alt="ir a Linkedin" class="inputBotonesNavegador" src="img/Linkedin.png" /></a>
+        </nav>
+        <section id="seccionPersonas">
+            <a id="personas"></a>
+            <h2>Personas</h2>
+            <p></p>
+            <h3>Registro</h3>
+            <p></p>
+            <form id="formularioPersonas">
+                <label for="nombre1">Nombre:</label>
+                <input id="nombre1" type="text" maxlength="20" class="esquinaChica" required placeholder="Nombre" />
+                <label for="seccion"> Sección:</label>
+                <input type="number" id="seccion" required class="esquinaChica" max="8" min="1" placeholder="Sección" />
+                <label for="email"> Mail:</label>
+                <input type="email" id="email" required class="esquinaChica" placeholder="Mail" />
+                <p>
+                    <button class="esquinaChica" id="agregarPersonas" type="button">Agregar</button>
+                </p>
+            </form>
+            <p></p>
+            <h3>Visualización</h3>
+            <ul id="listaPersonas"></ul>
+            <p>
+                <a href="#inicio"><img alt="ir a inicio" class="flecha" src="img/flecha.png" /></a>
+            </p>
+        </section>
+        <section id="seccionCompras">
+            <a id="compras"></a>
+            <h2>Compras</h2>
+            <p></p>
+            <h3>Registro</h3>
+            <p></p>
+            <form id="formularioCompras">
+                Hecha por:
+                <select id="listaPersonasCompras" class="esquinaChica"> </select>
+                <label for="descripcion">Descripcion:</label>
+                <input type="text" id="descripcion" maxlength="40" class="esquinaChica" required placeholder="Descripcion" size="35" />
+                <label for="monto">Monto:</label>
+                <input type="number" id="monto" class="esquinaChica" required placeholder="Monto" min="0"/>
+                <br />
+                <div id="checkboxes"></div>
+                <br />
+                <p></p>
+                <button id="agregarCompra" class="esquinaChica" type="button">Agregar</button>
+                <p></p>
+            </form>
+            <h3>Reintegro</h3>
+            <p></p>
+            Se reintegra la compra:
+            <select id="comboReintegros" class="esquinaChica"> </select>
+            <p></p>
+            <button id="botonReintegro" class="esquinaChica" type="button">Reintegro</button>
+            <p></p>
+            <h3>Visualizacion</h3>
+            <p></p>
+            Orden:<input type="radio" name="radioBoton" checked id="number" />
+            <label for="number">número</label>
+            <input type="radio" name="radioBoton" id="nombre2" />
+            <label for="nombre2">nombre</label>
+            <p></p>
+            <table id="tabla"></table>
+            <p>
+                <a href="#inicio"><img alt="ir a inicio" class="flecha" src="img/flecha.png" /></a>
+            </p>
+        </section>
+        <section id="seccionConsultas">
+            <a id="consultas"></a>
+            <h2>Consultas</h2>
+            <p></p>
+            <h3>Pagos/Cobros pendientes por persona</h3>
+            <p>
+                Persona:
+                <select id="ListaPersonasConsultas" class="esquinaChica"> </select>
+                <button id="botonConsultas" class="esquinaChica" type="button">Consultar Totales</button>
+            </p>
+
+            <div id="consultaResp"></div>
+            <br />
+            <div id="consultaPart"></div>
+            <h3>Descripción</h3>
+            <p>
+			<form id="formularioConsultas">
+				<label for="buscar">Palabra a buscar:</label> <input class="esquinaChica" required id="buscar" type="text" /> <button id="botonBuscar" class="esquinaChica" type="button">Consultar Compras</button>
+			</form></p>
+            <div id="resultadoBusca"></div>
+            <ul id="listaDescripcion"></ul>
+            <p></p>
+            <h3>Gráfica</h3>
+            <p>Se muestra cantidad de compras totales por rango de a $100(0-99, 100-199, etc) <button id="botonGrafica" class="esquinaChica" type="button">Graficar</button></p>
+            <p></p>
+			<div id="grafica"></div>
+            <a href="#inicio"><img alt="ir a inicio" class="flecha" src="img/flecha.png" /></a>
+        </section>
+        <footer>
+            <h5>Obligatorio Programación I - 1er semestre 2020 - Realizado por: Mateo Mu&ntilde;iz</h5>
+        </footer>
+    </body>
+</html>

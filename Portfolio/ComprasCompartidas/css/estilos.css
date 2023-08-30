@@ -1,0 +1,89 @@
+.esquinaChica {
+    border-radius: 15px;
+}
+
+.tituloGrande {
+    display: none;
+}
+.tituloChico {
+    display: block;
+    border-radius: 25px;
+    width: 15%;
+}
+
+@media only screen and (min-width: 600px) {
+    .tituloGrande {
+        display: block;
+        border-radius: 25px;
+        width: 35%;
+    }
+    .tituloChico {
+        display: none;
+    }
+}
+
+.resaltar {
+    color: red;
+    font-weight: bold;
+}
+
+nav {
+    padding-top: 7px;
+
+    padding-bottom: 5px;
+
+    background-color: blue;
+
+    padding-left: 5%;
+
+    border-radius: 25px;
+}
+section {
+    border-radius: 25px;
+
+    background-color: beige;
+
+    padding-left: 5%;
+}
+.boton {
+    border-radius: 100%;
+}
+.flecha {
+    width: 25px;
+}
+.inputBotonesNavegador {
+    height: 35px;
+
+    width: 35px;
+
+    border-radius: 60%;
+}
+
+.correr {
+    padding-right: 10px;
+}
+.centrar {
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: rgb(230, 230, 16);
+
+    border-radius: 25px;
+
+    text-align: center;
+}
+.aBotonesNavegador {
+    padding-right: 10px;
+}
+table {
+    text-align: center;
+}
+
+td,
+th {
+    border: ridge;
+}
+body {
+    font-family: arial;
+}
