@@ -1,9 +1,35 @@
 header {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center;    /* Center horizontally */
-  padding: 20px;          /* Add some space for better appearance */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif
 }
+body {
+  margin: 0;
+}
+.page-wrapper {
+  background-image: url("../img/b.jpg"); /* Update the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Additional styles for the div */
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.image-container {
+  margin-top: 20px;
+}
+
+h1{
+  color: grey
+}
+
+h2{
+  color: 
+}
+/* ... other CSS rules ... */
 
 .image-container {
   margin-top: 20px; /* Add space between text and image */
@@ -13,10 +39,9 @@ header {
   max-width: 100%;
   height: auto; /* Maintains aspect ratio */
 }
-.tituloChico {
-  display: block;
-  border-radius: 25px;
-  width: 15%;
+.reachMeImg {
+  max-width: 100%;
+  height: 129px; 
 }
 
 @media only screen and (min-width: 600px) {
@@ -50,9 +75,8 @@ header {
 
 }
 section {
-  border-radius: 25px;
 
-  background-color: beige;
+  background-color: #fca311;
 
   padding-left: 5%;
 }
@@ -94,7 +118,4 @@ table {
 td,
 th {
   border: ridge;
-}
-body {
-  font-family: arial;
 }
