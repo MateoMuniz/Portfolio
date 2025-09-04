@@ -1,6 +1,6 @@
 # Hello, I'm Mateo 👋😀
 
-## 💻🎓Currently I am a systems engineering student and I'm in my fifth semester, always excited to learn how to use new tools and technologies.
+## 💻🎓Currently I am a systems engineering student and I'm in my sixth semester, always excited to learn how to use new tools and technologies.
 
 ### -⚙️⌨️ I have experience in some programming languages like Javascript, Java, C++ and Haskell.
 ### -🖥️📄 Currently looking to grow in the IT industry
